@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товары для парсинга</title>
+  <!-- Минимальные стили для читаемости -->
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .product { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+    .title { font-weight: bold; font-size: 1.2em; }
+    .price { color: green; }
+  </style>
+</head>
+<body>
+  <!-- Заголовок страницы -->
+  <h1>Список товаров</h1>
+
+  <!-- Каждый блок .product — это отдельный товар -->
+  <div class="product" data-id="1">
+    <!-- Название товара -->
+    <div class="title">Ноутбук Acer Aspire 5</div>
+    <!-- Цена товара -->
+    <div class="price" data-price="49999">49 999 ₽</div>
+    <!-- Категория -->
+    <div class="category">Электроника</div>
+    <!-- Описание -->
+    <div class="description">Хороший ноутбук для работы и учёбы.</div>
+  </div>
+
+  <div class="product" data-id="2">
+    <div class="title">Беспроводные наушники SoundMax</div>
+    <div class="price" data-price="2999">2 999 ₽</div>
+    <div class="category">Аудио</div>
+    <div class="description">Наушники с шумоподавлением и длительной работой батареи.</div>
+  </div>
+
+  <div class="product" data-id="3">
+    <div class="title">Книга «Изучаем Python»</div>
+    <div class="price" data-price="899">899 ₽</div>
+    <div class="category">Книги</div>
+    <div class="description">Подробное руководство по Python с примерами.</div>
+  </div>
+
+  <div class="product" data-id="4">
+    <div class="title">Смарт-часы FitLife</div>
+    <div class="price" data-price="7499">7 499 ₽</div>
+    <div class="category">Гаджеты</div>
+    <div class="description">Фитнес-часы с мониторингом сна и шагов.</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+{% if films %}
+    {% for film in films %}
+        <div class="card h-100 shadow-sm" style="width: 50rem; margin: auto">
+            <img src="{{film["image"]}}" class="card-img-top" alt="Товар 3">
+            <div class="card-body">
+                <h5 class="card-title">{{film["title"]}}</h5>
+                <p class="card-title">{{film["description"]}}</p>
+                <b>Рейтинг: {{film["rate"]}}</b>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <b>Фильмов пока нет(</b>
+{% endif %}
+{% endblock %}
